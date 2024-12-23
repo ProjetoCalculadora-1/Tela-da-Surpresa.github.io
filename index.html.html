@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruivez é zica</title>
+    <style>
+        body {
+            background-color: #b4caf4;
+            color: white;
+            font-family: Arial;
+            text-align: center;
+            justify-content: center;
+        }
+        .surpresa {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+        }
+        #btn_surpresa {
+            background-color: mediumblue;
+            animation:butto_animation 5s infinite;
+            width: 15%;
+            color: white;
+            border-radius: 15px;
+            border: none;
+            text-align: center;
+            font-size: 14px;
+            padding: 10px;
+            cursor: pointer;
+        }
+        h1 {
+            color: rgb(36, 36, 157);
+            animation: cabecalho_animation 5s infinite;
+            margin-bottom: 0px;
+        }
+        @keyframes cabecalho_animation {
+            10% {color: rgb(84, 84, 233);}
+            20% {color: darkblue;}
+            25% {color: aqua;}
+            30% {color: deepskyblue;}
+            40% {color: cornflowerblue;}
+            50% {color: royalblue;}
+            60% {color: dodgerblue;}
+            70% {color: steelblue;}
+            80% {color: mediumblue;}
+            90% {color: rgb(52, 29, 202);}
+            100% {color: navy;}
+
+        }
+        @keyframes butto_animation {
+            5% {background-color: blue;}
+            10% {background-color: rgb(84, 84, 233);}
+            20% {background-color: darkblue;}
+            25% {background-color: aqua;}
+            30% {background-color: deepskyblue;}
+            40% {background-color: cornflowerblue;}
+            50% {background-color: royalblue;}
+            60% {background-color: dodgerblue;}
+            70% {background-color: steelblue;}
+            80% {background-color: mediumblue;}
+            90% {background-color: rgb(52, 29, 202);}
+100% {background-color: navy;}
+        }
+        @keyframes link_animation {
+            10% {color: rgb(84, 84, 233);}
+            20% {color: darkblue;}
+            40% {color: cornflowerblue;}
+            50% {color: royalblue;}
+            60% {color: dodgerblue;}
+            70% {color: steelblue;}
+            80% {color: mediumblue;}
+            90% {color: rgb(52, 29, 202);}
+            100% {color: navy;}
+        }
+        .icon-bolo {
+            width: 550px;
+        }
+        .org {
+            text-align: center;
+        }
+        p {
+            width: 30%;
+            margin-left: 35%;
+        }
+        #FlowerLink {
+            text-decoration: none;
+            color: blue;
+            margin-left: 20%;
+            animation: link_animation 5s infinite;
+    display: inline-flex; /* Permite alinhar os elementos no mesmo eixo */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    gap: 1px; /* Espaço entre os elementos */
+}
+        .Tulipa_Blue{
+            width: 30px;
+        }
+        .emoji-heart {
+    font-size: 17px; /* Ajuste para corresponder à altura da tulipa */
+    vertical-align: middle; /* Alinha verticalmente com a tulipa */
+    position: absolute;
+    margin-left: 16%;
+    margin-bottom: 11px;
+}
+    </style>
+</head>
+<body>
+    <div class="surpresa">
+        <h1>Ruiva Linda🩵🤍</h1>
+        <div class="org">
+            <img src="assets/img/happy-ruiva.png" class="icon-bolo">
+        <p style="text-align: justify;">Ruiva, você é incrível!
+            Mana, mesmo com pouco tempo que a gente se conhece, dá pra ver o quanto você é uma pessoa incrível e especial. Sua energia, sua alegria, e a forma como você cativa todo mundo ao seu redor são admiráveis.
+            Você é querida por todos, e não é à toa: seu jeito carinhoso e divertido conquista qualquer um! Sou muito grato por ter te conhecido e espero que nossa amizade só cresça mais e mais.
+            Conta comigo sempre, Ruiva Você é única e merece tudo de bom nessa vida🩵
+            <a id="FlowerLink" href="tela-flower.html">
+                Uma Flor para uma Diva 
+                <span><img src="assets/img/tulipa-Azul.png" class="Tulipa_Blue"></span>
+                <span class="emoji-heart">💙</span>
+            </a>            
+        </p>
+        <button type="button" id="btn_surpresa" onclick="memorias_EmVideo()">Gerando Memorias...</button>
+        </div>
+    </div>
+    <audio src="assets/audio/bruno mars - count on me (sped up).mp3" autoplay loop></audio>
+    <script src="assets/script/main.js"></script>
+    <script>
+       window.alert('“Se tu me cativas, nós teremos necessidade um do outro. Será para mim único no mundo. E eu serei para ti única no mundo.”')
+    </script> 
+</body>
+</html>
